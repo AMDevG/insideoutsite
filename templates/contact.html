@@ -113,8 +113,8 @@
 
         <div class="emailForm" id="contactForm">
 
-            <form action="MAILTO:insideoutchi@egmail.com" method="post" enctype="text/plain">
-            
+            <form action="/insideoutchi/success/" method="POST" id= "contForm">
+            {% csrf_token %}
             <br>Name:<br><br>
             <input type="text" name="name" value="Your Name..." size="100"><br>
             
@@ -123,9 +123,9 @@
             
             <br>Message:<br><br>
             
-           <textarea name="textarea" style="width:755px;height:150px;"></textarea>
-            <br><input type="submit" value="Send">
-            <input type="reset" value="Reset">
+           <textarea name="message" style="width:755px;height:150px;"></textarea>
+            <br>
+            <button name = "Send" type = "submit" id="send">Send</button>
             
             </form>
         </div>

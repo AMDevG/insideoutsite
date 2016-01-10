@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.core.mail import send_mail
 
 # Create your views here.
-
-
 
 
 def pdf(request):
@@ -59,6 +58,23 @@ def three(request):
 
 def contact(request):
 	return render(request, 'contact.html')
+
+def success(request):
+
+    if request.method == 'POST':
+    	name_text = request.POST.get('name', None)
+    	email_text = request.POST.get('mail', None)
+        message_text = request.POST.get('message', None)
+
+        send_mail('Email from Inside Out Website', message_text,"insideoutchi@gmail.com",
+    ['jeberry308@gmail.com'], fail_silently=False)	
+
+
+        return render(request, 'success.html')
+
+    else:
+    	return HttpResponse("Sorry nothing enterd")
+
 
 
 
