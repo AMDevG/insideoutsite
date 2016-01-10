@@ -1,0 +1,41 @@
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+#aboutHeader{
+
+    position: relative;
+    color: black;
+    
+    
+    margin-left:1px; 
+    margin-top:30px
+
+}
+
+p{
+    margin-left:0px;
+
+    margin-right:5px;
+}
+
+#aboutBox{
+
+    margin-left:50px;
+
+}

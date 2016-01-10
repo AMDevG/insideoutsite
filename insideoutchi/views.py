@@ -3,6 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 
+
+
+
 def pdf(request):
 	
 
@@ -19,8 +22,6 @@ def home(request):
 
 def artwork(request):
 	return render(request, 'artwork.html')
-
-
 
 def poetry(request):
 	with open("/Users/jberry12/Desktop/mysite/poem_example.pdf", 'r') as pdf:
@@ -55,6 +56,10 @@ def two(request):
 
 def three(request):
 	return render(request, 'three.html')
+
+def contact(request):
+	return render(request, 'contact.html')
+
 
 
 
