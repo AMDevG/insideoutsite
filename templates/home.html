@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="{%url 'insideoutchi:about'%}" >About</a>
                     </li>
                     <li>
                         <a href="#services">Think Tanks</a>
@@ -80,13 +80,16 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href={%url 'insideoutchi:artwork'%} class="btn btn-default btn-lg"> <span class="network-name">Student Artwork</span></a>
+                                <a href={%url 'insideoutchi:artwork'%} class="btn btn-default btn-lg"> <span class="network-name">Artwork</span></a>
                             </li>
                             <li>
-                                <a href={%url 'insideoutchi:essays'%} class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Essays</span></a>
+                                <a href={%url 'insideoutchi:essays'%} class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Publications</span></a>
                             </li>
                             <li>
                                 <a href={%url 'insideoutchi:poetry'%} class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Poetry</span></a>
+                            </li>
+                            <li>
+                                <a href={%url 'insideoutchi:poetry'%} class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Think Tanks</span></a>
                             </li>
                         </ul>
                     </div>
@@ -97,9 +100,6 @@
         <!-- /.container -->
 
     </div>
-    <!-- /.intro-header -->
-
-    <!-- Page Content -->
 
 	<a  name="services"></a>
     <div class="content-section-a">
@@ -109,7 +109,11 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Restoratice Justice in the News<br>Headline</h2>
+                    <h2 class="section-heading">L.A. Schools See Results From Restorative Justice</h2>
+                    <a href="http://www.latimes.com/local/education/la-me-school-discipline-20151108-story.html"> <img alt="Loading.." src="{% static 'img/news.jpg' %}" width="500" height="350"> </a>
+                    <p>Los Angeles school district sees rapid decline in suspensions following
+                        implementation of restorative justice policies. Click photo for story.
+                    </p>
                     
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -128,12 +132,20 @@
         <div class="container">
 
             <div class="row">
+
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Inside Out Chicago Events<br></h2>
                     
+                    <img alt="Loading.." src="{% static 'img/group1.jpg' %}" width="600" height="450">
+                    <div style="float:left; width: 700px;">
+                    <p>Inside Out Students photgraphed at prison cemetery in Joliet, IL </p>
+                    
+                    </div>
                 </div>
+
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/dog.png" alt="">
                 </div>
@@ -154,6 +166,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Student Programs<br></h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8d3aa8Raf4c" frameborder="0" allowfullscreen></iframe>
                     
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -174,7 +187,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Contact Us:</h2>
+                    <h2>Contact Us: <br>insideout@insideoutchicago.com<br></h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
@@ -201,19 +214,17 @@
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Home</a>
+                            <a href={%url 'insideoutchi:home'%} >Home</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="{%url 'insideoutchi:about'%}">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">News</a>
-                        </li>
+                
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a>Contact</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; AMDevG 2015. All Rights Reserved</p>

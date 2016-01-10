@@ -7,7 +7,7 @@ def pdf(request):
 	
 
 	### REPLACE PATH WITH PATH ON SERVER TO FILE
-    with open("/Users/jberry12/Desktop/test.pdf", 'r') as pdf:
+    with open("/Users/jberry12/Desktop/mysite/test.pdf", 'r') as pdf:
         response = HttpResponse(pdf.read(), content_type='application/pdf')
         response['Content-Disposition'] = 'inline;filename="test.pdf"'
         return response
@@ -23,12 +23,25 @@ def artwork(request):
 
 
 def poetry(request):
-	return render(request, 'poetry.html')
+	with open("/Users/jberry12/Desktop/mysite/poem_example.pdf", 'r') as pdf:
+    		response = HttpResponse(pdf.read(), content_type='application/pdf')
+		response['Content-Disposition'] = 'inline;filename="poem_example.pdf"'
+        return response
+    	pdf.closed
 
+def about(request):
+	return render(request, 'about.html')
 
 
 def essays(request):
 	return render(request, 'essays.html')
+
+def pdf2(request):
+	with open("/Users/jberry12/Desktop/mysite/Essay1.pdf", 'r') as pdf:
+        	response = HttpResponse(pdf.read(), content_type='application/pdf')
+        response['Content-Disposition'] = 'inline;filename="Essay1.pdf"'
+        return response
+    	pdf.closed
 
 def test(request):
 	return render(request, 'test.html')
