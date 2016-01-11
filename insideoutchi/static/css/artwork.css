@@ -31,3 +31,15 @@ h6 {
 
     margin-right:200px;
 }
+
+
+#navbar{
+
+    font-family: proxima-nova, sans-serif;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 18px;
+    color:black;
+
+
+}

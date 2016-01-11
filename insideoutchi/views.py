@@ -23,11 +23,13 @@ def artwork(request):
 	return render(request, 'artwork.html')
 
 def poetry(request):
-	with open("/Users/jberry12/Desktop/mysite/poem_example.pdf", 'r') as pdf:
-    		response = HttpResponse(pdf.read(), content_type='application/pdf')
-		response['Content-Disposition'] = 'inline;filename="poem_example.pdf"'
-        return response
-    	pdf.closed
+    # with open("/Users/jberry12/Desktop/mysite/poem_example.pdf", 'r') as pdf:
+    #     response = HttpResponse(pdf.read(), content_type='application/pdf')
+    #     response['Content-Disposition'] = 'inline;filename="poem_example.pdf"'
+    #     return response
+    # pdf.closed
+    return render(request, 'poetry.html')
+
 
 def about(request):
 	return render(request, 'about.html')
@@ -37,11 +39,11 @@ def essays(request):
 	return render(request, 'essays.html')
 
 def pdf2(request):
-	with open("/Users/jberry12/Desktop/mysite/Essay1.pdf", 'r') as pdf:
-        	response = HttpResponse(pdf.read(), content_type='application/pdf')
+    with open("/Users/jberry12/Desktop/mysite/Essay1.pdf", 'r') as pdf:
+        response = HttpResponse(pdf.read(), content_type='application/pdf')
         response['Content-Disposition'] = 'inline;filename="Essay1.pdf"'
         return response
-    	pdf.closed
+        pdf.closed
 
 def test(request):
 	return render(request, 'test.html')
@@ -62,12 +64,12 @@ def contact(request):
 def success(request):
 
     if request.method == 'POST':
-    	name_text = request.POST.get('name', None)
-    	email_text = request.POST.get('mail', None)
+        name_text = request.POST.get('name', None)
+        email_text = request.POST.get('mail', None)
         message_text = request.POST.get('message', None)
 
         send_mail('Email from Inside Out Website', message_text,"insideoutchi@gmail.com",
-    ['jeberry308@gmail.com'], fail_silently=False)	
+        ['jeberry308@gmail.com'], fail_silently=False)	
 
 
         return render(request, 'success.html')

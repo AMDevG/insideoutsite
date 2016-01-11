@@ -29,25 +29,43 @@
 <body>
 
 	  <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="{%url 'insideoutchi:home'%}">Home</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-          
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
 
+        </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="navbar-header">
+        
+        
+                <ul class="nav navbar-nav navbar-right" id="navbar">
+                    <li>
+                        <a style="margin-top:5px; letter-spacing: 0.05em;" class="navbar-brand topnav" href="{%url 'insideoutchi:home'%}">HOME</a>
+                    </li>
+                    
+                    <li>
+                        <a style="margin-top:5px; margin-left:10px; letter-spacing: 0.05em;" href="{%url 'insideoutchi:about'%}" >ABOUT</a>
+                    </li>
+                    <li>
+                        <a style="margin-top:5px; letter-spacing: 0.05em;" href="{%url 'insideoutchi:thinktank'%}" >THINK TANKS</a>
+                    </li>
+                    <li>
+                        <a style="margin-top:5px; letter-spacing: 0.05em;" href="{%url 'insideoutchi:contact'%}">CONTACT</a>
+                    </li>
+
+               
+                    
+                </ul>
+                <br>
+                <br>
+                <br>
+
+              
+
+            </div>
+            </div>
+
+    </nav>
 
     <!-- Header -->
     <a name="about"></a>
@@ -69,7 +87,8 @@
     <!-- Page Content -->
 
     <div class="content-section-a">
-
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
@@ -77,16 +96,28 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Think Tanks</h2>
                     
+                    <img alt="Loading.." src="{% static 'img/thinktankdefault.png' %}" width="1000" height="550">
+
                 </div>
             </div>
 
     
-
+            <br>
+            
 
         <div class="thinTankDesc" id="thinkTankDesc">
 
+         
+
         		<p style="margin-left:150px; margin-right:75px; text-align:center;"> Inside Out Chicago runs a series of bi-weekly Think Tanks for incarcerated alumni. The Think Tanks 
-        			are designed to dissect abstract concepts and to further academic research skills with the creation of policy papers</p>
+        			are designed to dissect abstract concepts and to further academic research skills with the creation of policy papers.
+                    
+                    <br>
+                    <br>
+
+                    If you are interested in learning more please send us an email<a href="{%url 'insideoutchi:contact'%}"> by clicking here! </a>
+
+                </p>
 
 
         </div>

@@ -17,7 +17,7 @@
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom CSS -->
-  
+    <link href="{% static 'css/essays.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -37,21 +37,40 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="{%url 'insideoutchi:home'%}">Home</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-          
-            <!-- /.navbar-collapse -->
+
         </div>
-        <!-- /.container -->
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="navbar-header">
+        
+        
+                <ul class="nav navbar-nav navbar-right" id="navbar">
+                    <li>
+                        <a style="margin-top:5px; letter-spacing: 0.05em;" class="navbar-brand topnav" href="{%url 'insideoutchi:home'%}">HOME</a>
+                    </li>
+                    
+                    <li>
+                        <a style="margin-top:5px; margin-left:10px; letter-spacing: 0.05em;" href="{%url 'insideoutchi:about'%}" >ABOUT</a>
+                    </li>
+                    <li>
+                        <a style="margin-top:5px; letter-spacing: 0.05em;" href="{%url 'insideoutchi:thinktank'%}" >THINK TANKS</a>
+                    </li>
+                    <li>
+                        <a style="margin-top:5px; letter-spacing: 0.05em;" href="{%url 'insideoutchi:contact'%}">CONTACT</a>
+                    </li>
+
+               
+                    
+                </ul>
+                <br>
+                <br>
+                <br>
+
+              
+
+            </div>
+            </div>
+
     </nav>
 
 
@@ -72,12 +91,13 @@
 
 	<a  name="services"></a>
     <div class="content-section-a">
-
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
+
                     <h2 class="section-heading">Student Essays</h2>
 
                     
