@@ -76,6 +76,9 @@ def success(request):
     	return HttpResponse("Sorry nothing enterd")
 
 
+def thinktank(request):
+	return render(request, 'thinktanks.html')
+
 
 
 

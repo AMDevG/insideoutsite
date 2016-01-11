@@ -18,7 +18,8 @@ urlpatterns = [
     url(r'^about/$',views.about, name="about"),
     url(r'^pdf2/$',views.pdf2, name="pdf2"),
     url(r'^contact/$',views.contact, name="contact"),
-    url(r'^success/$',views.success, name="success")
+    url(r'^success/$',views.success, name="success"),
+    url(r'^thinktanks/$', views.thinktank, name="thinktank")
 
 
 
