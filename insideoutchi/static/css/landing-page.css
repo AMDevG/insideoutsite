@@ -22,17 +22,19 @@ html {
 
 }
 
+
+
 #sub{
     font-family: proxima-nova, sans-serif;
     font-style: bold;
     font-weight: 400;
-    font-size: 45px;
-    color: white;
+    font-size: 55px;
+    color: black;
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    -1px -1px  #FFFFFF,
+    1px -1px  #FFFFFF,
+    -1px 1px  #FFFFFF,
+    1px 1px  #FFFFFF;
 }
 
 
