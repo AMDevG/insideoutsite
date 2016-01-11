@@ -69,7 +69,7 @@ def success(request):
         message_text = request.POST.get('message', None)
 
         send_mail('Email from Inside Out Website', message_text,"insideoutchi@gmail.com",
-        ['jeberry308@gmail.com'], fail_silently=False)	
+        ['dmoe@depaul.edu'], fail_silently=False)	
 
 
         return render(request, 'success.html')

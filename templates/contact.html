@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body background="{% static 'img/art1.jpg' %}">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
@@ -59,7 +59,9 @@
                         <a style="margin-top:5px; letter-spacing: 0.05em;" href="{%url 'insideoutchi:contact'%}">CONTACT</a>
                     </li>
 
-               
+                    <li>
+                        <a style="position absolute; top:5px; right:-250px; margin-top:5px; font-size:40px; color:black; letter-spacing: 0.10em;">INSIDE OUT CHICAGO</a>
+                    </li>
                     
                 </ul>
                 <br>
@@ -131,21 +133,21 @@
             <form action="/insideoutchi/success/" method="POST" id= "contForm">
             {% csrf_token %}
             <br>Name:<br><br>
-            <input type="text" name="name" value="Your Name..." size="100"><br>
+            <input type="text" name="name" value="Your Name..." size="55"><br>
             
             <br>E-mail:<br><br>
-            <input type="text" name="mail" value="Your Email..." size="100"><br>
+            <input type="text" name="mail" value="Your Email..." size="55"><br>
             
             <br>Message:<br><br>
             
-           <textarea name="message" style="width:755px;height:150px;"></textarea>
+           <textarea name="message" style="width:435px;height:150px;"></textarea>
             <br>
             <button name = "Send" type = "submit" id="send">Send</button>
             
             </form>
         </div>
 
-    </div>
+  
     <!-- /.banner -->
 
     <!-- Footer -->

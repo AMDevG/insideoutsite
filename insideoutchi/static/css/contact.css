@@ -23,8 +23,9 @@ h6 {
 
 #contactForm{
 
-    margin-left: 300px;
+    margin-left: 400px;
     margin-right: 100px;
+   
 
 }
 
@@ -36,5 +37,12 @@ h6 {
     font-size: 18px;
     color:black;
 
+
+}
+
+#contimg{
+    position:absolute;
+    top:70px;
+    left:450px;
 
 }
