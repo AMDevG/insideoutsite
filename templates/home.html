@@ -28,40 +28,43 @@
 
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Home</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{%url 'insideoutchi:about'%}" >About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Think Tanks</a>
-                    </li>
-                    <li>
-                        <a href="{%url 'insideoutchi:contact'%}">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+
         </div>
-        <!-- /.container -->
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                </button>
+                <a style="margin-top:5px;" class="navbar-brand topnav" href="#">Home</a>
+        
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a style="margin-top:5px;" href="{%url 'insideoutchi:about'%}" >About</a>
+                    </li>
+                    <li>
+                        <a style="margin-top:5px;" href="{%url 'insideoutchi:thinktank'%}" >Think Tanks</a>
+                    </li>
+                    <li>
+                        <a style="margin-top:5px;" href="{%url 'insideoutchi:contact'%}">Contact</a>
+                    </li>
+
+                    <li>
+                        <a style="margin-left:450px; margin-top:5px; font-size:40px">INSIDE OUT CHICAGO</a>
+                    </li>
+                    
+                </ul>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            </div>
+
     </nav>
 
-
-    <!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
         <div class="container">
@@ -69,10 +72,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Inside Out Chicago</h1>
-                        <h3>Moving beyond the walls that separate us.</h3>
-                        <hr class="intro-divider">
+                        
+                        <!--<hr class="intro-divider">  WAS LINE SEPERATOR-->  
                         <ul class="list-inline intro-social-buttons">
+                            <br>
+                            
                             <li>
                                 <a href={%url 'insideoutchi:artwork'%} class="btn btn-default btn-lg"> <span class="network-name">Artwork</span></a>
                             </li>
@@ -85,17 +89,24 @@
                             <li>
                                 <a href={%url 'insideoutchi:thinktank'%} class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Think Tanks</span></a>
                             </li>
-                        </ul>
+                            </ul>
+
+                            <header id="sub">
+                                <br>
+                            <h2 id="sub">Moving beyond the walls that separate us.</h2>
+                            </header>
+                        
                     </div>
                 </div>
             </div>
 
         </div>
-        <!-- /.container -->
 
     </div>
 
 	<a  name="services"></a>
+
+    <!--
     <div class="content-section-a">
 
         <div class="container">
@@ -114,11 +125,9 @@
             </div>
 
         </div>
-        <!-- /.container -->
 
     </div>
-    <!-- /.content-section-a -->
-
+/*
     <div class="content-section-b">
 
         <div class="container">
@@ -138,16 +147,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/dog.png" alt="">
-                </div>
             </div>
 
         </div>
-        <!-- /.container -->
 
     </div>
-    <!-- /.content-section-b -->
 
     <div class="content-section-a">
 
@@ -165,10 +169,8 @@
             </div>
 
         </div>
-        <!-- /.container -->
 
     </div>
-    <!-- /.content-section-a -->
 
 	<a  name="contact"></a>
     <div class="banner">
@@ -192,12 +194,9 @@
             </div>
 
         </div>
-        <!-- /.container -->
 
     </div>
-    <!-- /.banner -->
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -222,11 +221,8 @@
             </div>
         </div>
     </footer>
-
-    <!-- jQuery -->
+-->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
 </body>
