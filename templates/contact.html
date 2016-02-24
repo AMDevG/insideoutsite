@@ -13,6 +13,7 @@
 
     <title>Contact Us!</title>
 
+    <link rel="shortcut icon" href="{%static 'img/IO_icon.ico'%}" />
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
@@ -39,16 +40,16 @@
         <div class="container topnav">
 
         </div>
-            
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="navbar-header">
-        
-        
+
+
                 <ul class="nav navbar-nav navbar-right" id="navbar">
                     <li>
                         <a style="margin-top:5px; letter-spacing: 0.05em;" class="navbar-brand topnav" href="{%url 'insideoutchi:home'%}">HOME</a>
                     </li>
-                    
+
                     <li>
                         <a style="margin-top:5px; margin-left:10px; letter-spacing: 0.05em;" href="{%url 'insideoutchi:about'%}" >ABOUT</a>
                     </li>
@@ -62,13 +63,13 @@
                     <li>
                         <a style="position absolute; top:5px; right:-250px; margin-top:5px; font-size:40px; color:black; letter-spacing: 0.10em;">INSIDE OUT CHICAGO</a>
                     </li>
-                    
+
                 </ul>
                 <br>
                 <br>
                 <br>
 
-              
+
 
             </div>
             </div>
@@ -83,7 +84,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    
+
                 </div>
             </div>
 
@@ -107,10 +108,10 @@
                     <div class="clearfix"></div>
                     <h2 id="aboutHeader" class="section-heading">Get in Touch with Us!</h2>
 
-    
-                    
+
+
                 </div>
-               
+
             </div>
 
         </div>
@@ -119,10 +120,10 @@
     </div>
     <!-- /.content-section-a -->
 
-    
+
     <!-- /.content-section-b -->
 
-   
+
     <!-- /.content-section-a -->
 
 	<a  name="contact"></a>
@@ -134,20 +135,20 @@
             {% csrf_token %}
             <br>Name:<br><br>
             <input type="text" name="name" value="Your Name..." size="55"><br>
-            
+
             <br>E-mail:<br><br>
             <input type="text" name="mail" value="Your Email..." size="55"><br>
-            
+
             <br>Message:<br><br>
-            
+
            <textarea name="message" style="width:435px;height:150px;"></textarea>
             <br>
             <button name = "Send" type = "submit" id="send">Send</button>
-            
+
             </form>
         </div>
 
-  
+
     <!-- /.banner -->
 
     <!-- Footer -->
@@ -157,7 +158,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="list-inline">
-                        
+
                     </ul>
                     <p class="copyright text-muted small" style="margin-top:150px;">Copyright &copy; AMDevG 2015. All Rights Reserved</p>
                 </div>
