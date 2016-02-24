@@ -5,18 +5,18 @@ from django.core.mail import send_mail
 # Create your views here.
 
 
-def detail(request):
-	
+def detail(request, num):
+
 	### REPLACE PATH WITH PATH ON SERVER TO FILE
-    
-    with open("C:/Users/John Berry/Desktop/insideoutsite/insideoutchi/static/pdfs/poems/poem.pdf", 'r') as pdf:
+
+    with open("/home/insideout/insideoutsite/insideoutchi/static/pdfs/poems/poem%s.pdf"%num, 'r') as pdf:
         response = HttpResponse(pdf.read(),content_type='application/pdf')
         response['Content-Disposition'] = 'inline;filename="poem1.pdf"'
         return response
     pdf.closed
 
-   
-    
+
+
 
 
 def home(request):
@@ -72,7 +72,7 @@ def success(request):
         message_text = request.POST.get('message', None)
 
         send_mail('Email from Inside Out Website', message_text,"insideoutchi@gmail.com",
-        ['dmoe@depaul.edu'], fail_silently=False)	
+        ['dmoe@depaul.edu'], fail_silently=False)
 
 
         return render(request, 'success.html')
