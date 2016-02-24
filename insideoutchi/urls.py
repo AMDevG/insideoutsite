@@ -8,6 +8,7 @@ urlpatterns = [
 
     url(r'^home/$', views.home, name="home"),
     url(r'^detail/(?P<num>\d+)$', views.detail, name='detail'),
+    url(r'^pubDetail/(?P<num>\d+)$', views.pubDetail, name='pubDetail'),
     url(r'^artwork/$',views.artwork, name="artwork"),
     url(r'^essays/',views.essays, name="essays"),
     url(r'^poetry/$',views.poetry, name="poetry"),

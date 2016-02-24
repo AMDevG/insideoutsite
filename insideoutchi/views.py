@@ -5,7 +5,7 @@ from django.core.mail import send_mail
 # Create your views here.
 
 
-def detail(request, num):
+def detail(request, num):   #### RETURNS DETAIL FOR POETRY, HREF IS AN IMAGE
 
 	### REPLACE PATH WITH PATH ON SERVER TO FILE
 
@@ -15,6 +15,13 @@ def detail(request, num):
         return response
     pdf.closed
 
+def pubDetail(request, num):
+
+    with open("/home/insideout/insideoutsite/insideoutchi/static/pdfs/publications/pub%s.pdf"%num, 'r') as pdf:
+        response = HttpResponse(pdf.read(),content_type='application/pdf')
+        response['Content-Disposition'] = 'inline;filename="poem1.pdf"'
+        return response
+    pdf.closed
 
 
 
