@@ -5,15 +5,18 @@ from django.core.mail import send_mail
 # Create your views here.
 
 
-def pdf(request):
+def detail(request):
 	
-
 	### REPLACE PATH WITH PATH ON SERVER TO FILE
-    with open("/Users/jberry12/Desktop/mysite/test.pdf", 'r') as pdf:
-        response = HttpResponse(pdf.read(), content_type='application/pdf')
-        response['Content-Disposition'] = 'inline;filename="test.pdf"'
+    
+    with open("C:/Users/John Berry/Desktop/insideoutsite/insideoutchi/static/pdfs/poems/poem.pdf", 'r') as pdf:
+        response = HttpResponse(pdf.read(),content_type='application/pdf')
+        response['Content-Disposition'] = 'inline;filename="poem1.pdf"'
         return response
     pdf.closed
+
+   
+    
 
 
 def home(request):
@@ -23,7 +26,7 @@ def artwork(request):
 	return render(request, 'artwork.html')
 
 def poetry(request):
-    # with open("/Users/jberry12/Desktop/mysite/poem_example.pdf", 'r') as pdf:
+    # with open("/home/AMDevG//mysite/poem_example.pdf", 'r') as pdf:
     #     response = HttpResponse(pdf.read(), content_type='application/pdf')
     #     response['Content-Disposition'] = 'inline;filename="poem_example.pdf"'
     #     return response
